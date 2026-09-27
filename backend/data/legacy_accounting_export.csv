@@ -1,0 +1,10 @@
+"COMPANY ACCOUNTS PAYABLE REPORT",,,,
+"Generated On: 09/26/2026",,,,
+,,,,
+Txn_ID,Date_Entered,Payee_Name,Amount,Debit_Credit
+"TXN-001","Sep 26, 2026","Amazon Web Services","$1,450.00","DR"
+"TXN-002","Sep 26, 2026","Stripe Payout","$5,200.00","CR"
+,,,,
+"TOTAL_DEBITS",,"$1,450.00",,
+"TOTAL_CREDITS",,"$5,200.00",,
+"REPORT_END",,,,

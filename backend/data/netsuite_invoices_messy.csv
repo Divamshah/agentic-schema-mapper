@@ -1,0 +1,6 @@
+Internal_ID,Type,Date,Name,Amount,Memo
+1045,Invoice,9/26/2026,Acme Corp,1500.00,Monthly Retainer
+1045,Invoice Line,,Service A,1000.00,Consulting
+1045,Invoice Line,,Service B,500.00,Software License
+1046,CreditMemo,9/27/2026,Acme Corp,-200.00,Discount applied
+1046,Credit Line,,,,-200.00,
