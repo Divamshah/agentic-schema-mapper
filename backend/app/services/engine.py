@@ -100,7 +100,9 @@ def execute_plan(csv_content: str, plan: ExtractionPlan) -> List[CanonicalLedger
     validated_results = []
     for record in records:
         try:
-            validated_results.append(CanonicalLedgerEntry(**record))
+            # Convert keys to strings to satisfy type checkers (target_df.columns can be Hashable)
+            str_record = {str(k): v for k, v in record.items()}
+            validated_results.append(CanonicalLedgerEntry(**str_record))
         except Exception as e:
             # In a robust pipeline, this would route to a Dead Letter Queue for human review!
             print(f"Validation Error for record {record}: {e}")
