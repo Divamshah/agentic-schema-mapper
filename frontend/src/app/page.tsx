@@ -26,7 +26,8 @@ export default function Home() {
 
     try {
       // Assuming FastAPI runs on 8000
-      const res = await fetch("http://localhost:8000/api/process-csv", {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+      const res = await fetch(`${apiUrl}/api/process-csv`, {
         method: "POST",
         body: formData,
       });
