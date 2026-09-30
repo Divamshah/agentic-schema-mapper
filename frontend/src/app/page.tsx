@@ -61,6 +61,11 @@ export default function Home() {
           <p className="text-lg text-gray-600 max-w-2xl mt-4">
             Upload messy ERP exports. Watch the AI build a deterministic mapping plan, and see the clean canonical ledger magically appear.
           </p>
+          <div className="flex space-x-4 mt-6 text-sm">
+            <a href="https://github.com/Divamshah/agentic-schema-mapper" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium underline underline-offset-2">View on GitHub</a>
+            <span className="text-gray-300">|</span>
+            <a href="https://github.com/Divamshah/agentic-schema-mapper/tree/main/backend/data" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium underline underline-offset-2">Download Sample CSVs</a>
+          </div>
         </header>
 
         {/* Upload Section */}
